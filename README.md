@@ -58,7 +58,7 @@ Restart gmetad. service hdp-metad restart
 
 
 4. JMXTRANS (on c6402):: Install jmxtrans using rpm (https://github.com/downloads/jmxtrans/jmxtrans/jmxtrans-20121016.145842.6a28c97fbb-0.noarch.rpm). Its installed in /usr/share/jmxtrans (executable) and picks configuration from /var/lib/jmxtrans/. 
-Created accumulo.json in /var/lib/jmxtrans. 
+Created accumulo.json (https://raw.githubusercontent.com/whiz/accumulo-jmxtrans-ganglia/master/accumulo.json) in /var/lib/jmxtrans. 
 Start jmxtrans (/usr/share/jmxtrans start /var/lib/jmxtrans/accumulo.json). In this configuration, we are using jmxtrans on c6402 to read JMX metrics of TabletServers from both c6401 and c6402 and write into accumulo gmond collector running on c6402.  
 
 
