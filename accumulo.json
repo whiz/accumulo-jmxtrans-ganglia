@@ -1,0 +1,155 @@
+{
+"servers":
+[{
+"host":"c6402.ambari.apache.org",
+"port":"12341",
+"queries":
+[{
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Overall",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerMinCMetricsMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Minor Compactions",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerScanMetricsMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Scan Metrics",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerUpdateMetricsMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Update Metrics",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TabletServer,name=ThriftMetricsMBean,instance=Thrift Client Server",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Thrift Metrics",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}]
+},{
+"host":"c6401.ambari.apache.org",
+"port":"12341",
+"queries":
+[{
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Overall",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerMinCMetricsMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Minor Compactions",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerScanMetricsMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Scan Metrics",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TServerInfo,name=TabletServerUpdateMetricsMBean,instance=tserver",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Update Metrics",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}, {
+"obj":"accumulo.server.metrics:service=TabletServer,name=ThriftMetricsMBean,instance=Thrift Client Server",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "TS Thrift Metrics",
+"host" : "c6402.ambari.apache.org",
+"port" : 9666,
+"typeNames" : [""]
+}
+}]
+}]
+}
+]
+}
